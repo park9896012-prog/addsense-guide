@@ -1,0 +1,6 @@
+{
+  "name": "구글 애드센스 연동",
+  "description": "웹사이트 개발 후 구글 애드센스 승인, 연동, 수익화 및 정책 준수를 위한 완벽 가이드",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
