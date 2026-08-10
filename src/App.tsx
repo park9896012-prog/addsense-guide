@@ -25,6 +25,14 @@ export default function App() {
   const [activeView, setActiveView] = useState<ActiveView>('home');
   const [policyModalView, setPolicyModalView] = useState<'privacy' | 'terms' | 'disclaimer' | null>(null);
 
+  // Sync the browser tab title with the active language
+  useEffect(() => {
+    document.title =
+      lang === 'ko'
+        ? '구글 애드센스 연동(Google AdSense Integration & Website Monetization)'
+        : 'Google AdSense Integration & Website Monetization';
+  }, [lang]);
+
   // Handle policy modals from footer/links
   useEffect(() => {
     if (activeView === 'privacy' || activeView === 'terms' || activeView === 'disclaimer') {
